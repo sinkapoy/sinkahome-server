@@ -1,0 +1,52 @@
+{
+  "name": "@sinkapoy/home-server",
+  "version": "0.0.1",
+  "description": "typecript home server",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "watch": "rollup -c rollup.config.ts --watch --configPlugin @rollup/plugin-typescript",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinkapoy/sinkahome-server.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "sinkapoy",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/sinkapoy/sinkahome-server/issues"
+  },
+  "homepage": "https://github.com/sinkapoy/sinkahome-server#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.3.3",
+    "rollup": "^3.26.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "rollup-watch": "^4.3.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@ash.ts/ash": "^1.3.0",
+    "@sinkapoy/home-core": "0.0.3",
+    "@sinkapoy/home-integrations-commands": "^0.0.1",
+    "@sinkapoy/home-integrations-networking": "^0.0.3",
+    "@sinkapoy/home-integrations-scripts": "*",
+    "@sinkapoy/home-integrations-server-widgets": "^0.0.1",
+    "@sinkapoy/home-integrations-sinkapoy-serial": "^0.0.1",
+    "websocket": "^1.0.34"
+  },
+  "packageManager": "yarn@3.6.1"
+}
