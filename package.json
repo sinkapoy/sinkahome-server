@@ -44,7 +44,7 @@
     "@sinkapoy/home-integrations-commands": "^0.0.1",
     "@sinkapoy/home-integrations-networking": "^0.0.3",
     "@sinkapoy/home-integrations-scripts": "*",
-    "@sinkapoy/home-integrations-server-widgets": "^0.0.1",
+    "@sinkapoy/home-integrations-server-widgets": "*",
     "@sinkapoy/home-integrations-sinkapoy-serial": "^0.0.1",
     "websocket": "^1.0.34"
   },

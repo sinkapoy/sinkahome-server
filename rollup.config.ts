@@ -19,16 +19,12 @@ export default [
                 sourcemap: true,
             }
         ],
-        plugins: [
-            nodeResolve({
-                main: true,
-                preferBuiltins: true,
-            }),
+        plugins: [  
             json(),
             commonjs({ extensions: ['.js'] }),
             typescript({
             }),
-            
+            nodeResolve(),
             babel({babelHelpers: "bundled"}),
         ]
     }

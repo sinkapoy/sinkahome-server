@@ -440,15 +440,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinkapoy/home-core@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@sinkapoy/home-core@npm:0.0.1"
-  dependencies:
-    "@ash.ts/ash": ^1.3.0
-  checksum: 59c1bd9749ea3e405ca92422fd59d2d132149c7f29be65e2e9233a2e4bd6f2d4560e7f4cae10bcfc446e08838098fb270148ac1e51ca9ff013217d7f4780d5f2
-  languageName: node
-  linkType: hard
-
 "@sinkapoy/home-integrations-commands@npm:*, @sinkapoy/home-integrations-commands@npm:^0.0.1":
   version: 0.0.1
   resolution: "@sinkapoy/home-integrations-commands@npm:0.0.1"
@@ -460,20 +451,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinkapoy/home-integrations-networking@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@sinkapoy/home-integrations-networking@npm:0.0.1"
-  dependencies:
-    "@ash.ts/ash": ^1.3.0
-    "@types/websocket": ^1.0.5
-    websocket: ^1.0.34
-  peerDependencies:
-    "@sinkapoy/home-core": ^0.0.1
-  checksum: 45fa9d44bf0ad307801ceacdf60b9f2498fa31e1787fdfadb632b072d87e5f9ee3e632c83533d0e073c85e5780a3ad3598a0dfabccabd579ae6246478fadc116
-  languageName: node
-  linkType: hard
-
-"@sinkapoy/home-integrations-networking@npm:^0.0.3":
+"@sinkapoy/home-integrations-networking@npm:*, @sinkapoy/home-integrations-networking@npm:^0.0.3":
   version: 0.0.3
   resolution: "@sinkapoy/home-integrations-networking@npm:0.0.3"
   dependencies:
@@ -496,14 +474,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinkapoy/home-integrations-server-widgets@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@sinkapoy/home-integrations-server-widgets@npm:0.0.1"
+"@sinkapoy/home-integrations-server-widgets@npm:*":
+  version: 0.0.2
+  resolution: "@sinkapoy/home-integrations-server-widgets@npm:0.0.2"
   dependencies:
     "@ash.ts/ash": ^1.3.0
-    "@sinkapoy/home-core": ^0.0.1
-    "@sinkapoy/home-integrations-networking": ^0.0.1
-  checksum: 3e7ae77c0fe4aad6a055f8399b3804d1918a3a442fe9e1857e34140ac6dfce13c07390721a620703882401bdebc5b6a3bced753f2233ab2288c4633f21e6e356
+    "@sinkapoy/home-core": "*"
+    "@sinkapoy/home-integrations-networking": "*"
+  checksum: d97574dec044761c44de7d27c2ebbdd8d86b1ebbcd07e86697759be700a5e90f5874289899a78e31ee57c5ecd227b890f0d5bee6f09fa0b8a1b973eabdee970d
   languageName: node
   linkType: hard
 
@@ -531,7 +509,7 @@ __metadata:
     "@sinkapoy/home-integrations-commands": ^0.0.1
     "@sinkapoy/home-integrations-networking": ^0.0.3
     "@sinkapoy/home-integrations-scripts": "*"
-    "@sinkapoy/home-integrations-server-widgets": ^0.0.1
+    "@sinkapoy/home-integrations-server-widgets": "*"
     "@sinkapoy/home-integrations-sinkapoy-serial": ^0.0.1
     "@types/node": ^20.3.3
     rollup: ^3.26.0
