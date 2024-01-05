@@ -49,7 +49,7 @@
     "@sinkapoy/home-integrations-networking": ">=0.0.3",
     "@sinkapoy/home-integrations-scripts": ">=0.0.2",
     "@sinkapoy/home-integrations-server-widgets": ">=0.0.1",
-    "@sinkapoy/home-integrations-sinkapoy-serial": ">=0.0.2",
+    "@sinkapoy/home-integrations-sinkapoy-serial": ">=0.1.0",
     "serialport": "12.0.0",
     "websocket": "^1.0.34"
   },
