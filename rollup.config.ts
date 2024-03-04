@@ -22,9 +22,11 @@ export default [
             json(),
             typescript({
             }),
-            commonjs({ extensions: ['.js', '.ts'] }),
+            commonjs({ extensions: ['.js', '.ts'], exclude: [/glibc/g], ignoreDynamicRequires: true}),
             nodeResolve({
-                dedupe: ['@sinkapoy/home-core', 'node-fetch', 'http']
+                browser: false,
+                dedupe: ['@sinkapoy/home-core', 'node-fetch', 'http'],
+                
             }),
         ]
     }

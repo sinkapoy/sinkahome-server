@@ -15,7 +15,7 @@ class DebugSystem extends HomeSystem {
     }
 
     onPropertyWrite = (entity: Entity, id: string, value: any)=>{
-        console.log(`write property\n\tentity:${entity.name} id: ${id} value: ${value}`);
+        // console.log(`write property\n\tentity:${entity.name} id: ${id} value: ${value}`);
     }
 }
 
