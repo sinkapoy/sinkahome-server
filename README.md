@@ -6,6 +6,6 @@ The engine initializes various systems that interact with gadgets and other comp
 
 ## integrations
  - MiHome - full support for properties, partial for actions (can be invoked with args with no return), no support for events (planned). Have initial support for cloud devices (just scrobling for local devices).
- - zigbee - done through [zhm](https://github.com/Koenkk/zigbee-herdsman), full support for simple devices like switches and plugs, have problems with settings setup like distance and fade time for presense sensors. All devices which work in Home Assistant should work in this smart home system.
+ - zigbee - done through [zhm](https://github.com/Koenkk/zigbee-herdsman), full support for simple devices like switches, plugs, presence sensors and dimmers, tested on Tuya gadgets. All devices which work in Home Assistant should work in this smart home system.
  - server widgets - switches, folders and bindings to gadget properties
  - sinkahome-serial - support for my own relay and input modules based on stm32 microcontrollers
