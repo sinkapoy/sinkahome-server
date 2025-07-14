@@ -18,6 +18,7 @@
         "strictPropertyInitialization": false,
         "moduleResolution": "node",
         "baseUrl": ".",
+        "outDir": "dist",
         "lib": [
             "dom",
             "esnext",
@@ -37,7 +38,7 @@
         "types"
     ],
     "include": [
-        "src",
+        "src/**/*.ts",
         "types/**/*",
         "tests"
     ],

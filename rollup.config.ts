@@ -1,7 +1,8 @@
+import nodeResolve from "@rollup/plugin-node-resolve";
+import typescript from "@rollup/plugin-typescript";
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
-import nodeResolve from '@rollup/plugin-node-resolve';
-import typescript from 'rollup-plugin-typescript2';
+
 export default [
     {
         input: "src/index.ts",
@@ -20,13 +21,13 @@ export default [
         ],
         plugins: [
             json(),
+            commonjs({ extensions: ['.js', '.ts'], exclude: [/glibc/g], ignoreDynamicRequires: true}),
             typescript({
             }),
-            commonjs({ extensions: ['.js', '.ts'], exclude: [/glibc/g], ignoreDynamicRequires: true}),
             nodeResolve({
                 browser: false,
-                dedupe: ['@sinkapoy/home-core', 'node-fetch', 'http'],
-                
+                preferBuiltins: true,
+                dedupe: ['@sinkapoy/home-core', 'http', "@sinkapoy/home-integrations-server-widgets"],
             }),
         ]
     }
